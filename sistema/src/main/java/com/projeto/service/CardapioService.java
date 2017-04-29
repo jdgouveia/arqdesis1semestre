@@ -32,9 +32,15 @@ public class CardapioService {
 	public void excluir(Cardapio cardapio){
 		dao.delete(cardapio.getId());
 	}
-	public List<Cardapio> buscar(Cardapio cardapio){
-		List<Cardapio> cardapios =(List<Cardapio>) dao.buscarPeloId(cardapio.getId());
+	public List<Cardapio> buscarTodas(){
+		List<Cardapio> cardapios =(List<Cardapio>) dao.buscarTodas();
 		return cardapios;
 		
 	}
+	public Cardapio buscar(Cardapio cardapio){
+		Cardapio carda = (Cardapio) dao.buscarPeloId(cardapio.getId());
+		return carda;
+	}
+	
 }
+

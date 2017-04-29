@@ -13,7 +13,7 @@ public class DaoFactory {
 	private DaoFactory(){
 		this.factory = Persistence.createEntityManagerFactory("restaurante");
 	}
-	
+		
 	public static synchronized DaoFactory getInstancia(){ 
 		if(instancia == null) instancia = new DaoFactory();
 		return instancia;

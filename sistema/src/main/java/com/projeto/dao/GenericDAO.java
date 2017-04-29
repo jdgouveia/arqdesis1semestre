@@ -55,7 +55,7 @@ public abstract class GenericDAO  <T extends Serializable>{
 		EntityManager manager = getEntityManager();
 		manager.getTransaction().begin();
 		
-		Query query = manager.createQuery("from"+ oClass.getSimpleName());
+		Query query = manager.createQuery("from "+ oClass.getSimpleName());
 		List <T> entidades = query.getResultList();
 		manager.getTransaction().commit();
 		manager.close();

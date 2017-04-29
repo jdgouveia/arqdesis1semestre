@@ -4,4 +4,14 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>ManterCardapioController</servlet-name>
+  	<display-name>ManterCardapioController</display-name>
+  	<description></description>
+  	<servlet-class>com.projeto.controller.ManterCardapioController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ManterCardapioController</servlet-name>
+  	<url-pattern>/manter</url-pattern>
+  </servlet-mapping>
 </web-app>
