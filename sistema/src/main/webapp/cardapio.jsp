@@ -5,25 +5,116 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Cardapio</title>
+<link href="css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-	<form method="post" action="manter">
-		<label>ID produto</label>
-		<input id="idProduto" name="idProduto" type="text"/>
-		<br/>
-		<label>Nome Produto:</label>
-		<input id="nomeProduto" name="nomeProduto" type="text"/>
-		<br/>
-		<label>Descrição produto</label>
-		<input id="descricao" name="descricao"/>
-		<br/>
-		<label>Valor Unitario</label>
-		<input id="valor" name="valor"/>
-		
-		<button type="submit" value ="manter"  id="btn" name ="btn">Inserir</button>
-		<button type="submit" value ="alterar" id="btn" name ="btn">Alterar</button>
-		<button type="submit" value ="excluir" id="btn" name ="btn">Excluir</button>
-		<button type="submit" value ="listar"  id="btn" name ="btn">Listar</button>
-	</form>	
+	<nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">
+            Restaurante
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <form method="post" action="manter">
+      <div class="row">
+            
+              <div class="form-group col-md-6">
+                <label>ID do Produto</label>
+                <input type="text" class="form-control" id="id" data-toggle="tooltip" data-placement="top" title=" Preencha um Id válido">
+              </div>
+              <div class="form-group col-md-6">
+                <label>Nome do Produto</label>
+                <input type="text" class="form-control" id="nome" data-toggle="tooltip" data-placement="top" title="Preencha um Nome válido">
+              </div>
+            
+          
+        </div>
+      
+
+      <div class="row">
+            
+              <div class="form-group col-md-6">
+                <label>Descrição</label>
+                <input type="text" class="form-control" id="descricao" data-toggle="tooltip" data-placement="top" title="Preencha uma Descrição válida">
+              </div>
+              <div class="form-group col-md-6">
+                <label>Valor Unitário</label>
+                <input type="text" class="form-control" id="valor" data-toggle="tooltip" data-placement="top" title="Preencha um Valor válido">
+              </div>
+            
+      </div>
+
+      <div class="row">
+            
+              <div class="form-group col-md-3">
+                <button onclick="validaFormulario()" type="submit" value="inserir" class="btn btn-success ">Inserir</button>
+              </div>
+
+              <div class="form-group col-md-3">
+                <button onclick="validaFormulario()" type="submit" value="alterar" class="btn btn-warning ">Alterar</button>
+              </div>
+
+              <div class="form-group col-md-3">
+                <button onclick="validaFormulario()" type="submit" value"excluir" class="btn btn-danger ">Excluir</button>
+              </div>
+
+              <div class="form-group col-md-3">
+                <button onclick="validaFormulario()" type="submit" value="listar" class="btn btn-info ">Listar</button>
+              </div>
+           </div>
+		<table class="table table-bordered">
+           <thead>
+              <tr>
+                <th>Id</th>
+                <th>Nome do Produto</th>
+                <th>Descrição</th>
+                <th>Valor </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+               <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+               <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+
+                   </table>
+      </form>
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/validacao.js"></script>
+    <script type="text/javascript" ></script>
+	
+               
+       
 </body>
 </html>
